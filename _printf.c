@@ -1,10 +1,6 @@
-#include <stdio.h>
-#include <starg.h>
 #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
-void cleanup(va_list args, buffer_t *output);
-int run_printf(const char *format, va_list args, buffer_t *output);
 
 /**
  * _printf - Printf function
