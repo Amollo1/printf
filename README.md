@@ -5,7 +5,7 @@
 Collaborative poject on printf project
 
 ## Files
-** _printf **
+**_printf**
 
 A function that produces output according to a format.
 * Prototype: int _printf(const char *format, ...);
