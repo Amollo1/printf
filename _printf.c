@@ -24,13 +24,16 @@ int _printf(const char *format, ...)
 			{
 				case 'c':
 				{
-					char c = (char) va_arg(args, int);putchar(c);
+					char c = (char) va_arg(args, int);
+
+					putchar(c);
 					count++;
 					break;
 				}
 				case 's':
 				{
 					char *s = va_arg(args, char*);
+
 					while (*s != '\0')
 					{
 						putchar(*s);
@@ -57,7 +60,7 @@ int _printf(const char *format, ...)
 		format++;
 	}
 	va_end(args);
-	return count;
+	return (count);
 }
 /**
  * print_buffer - Prints the contents of the buffer if it exist
